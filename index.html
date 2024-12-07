@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="robots" content="noindex,nofollow">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>CSS Selectors by NAME HERE</title>
+        <title>CSS Selectors by Linda Fitt</title>
         <link href="css/pre.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
         <style>
@@ -13,43 +14,43 @@
             }
 
             li.my-list{
-                background-color: orange;
+                background-color:orange;
             }
 
-            li.new-list, div#new-div{
-                background-color: blue;
+            li.new-list,div#new-div{
+                background-color:blue;
             }
-            
+
             div.grandkids li{
-                background-color: red;
+                background-color:red;
             }
 
             ul.kids>li{
-                background-color: green;
+                background-color:green;
             }
 
             .add-border{
-                border:1px solid #000;
+                border: 1px solid #000;
             }
 
             .add-background{
-                background-color: gold;
+                background-color:gold;
             }
         </style>
     </head>
     <body>
         <header>
             
-            <h1 class="page-header">CSS Selectors by NAME HERE</h1>
+            <h1 class="page-header">CSS Selectors by Linda Fitt</h1>
             
         <nav>
             <ul>
                 <li><a href="#id">id</a></li>
-                <li><a href="#class">class</a></li>
-                <li><a href="#compound">compound</a></li>
-                <li><a href="#descendant">descendant</a></li>
-                <li><a href="#child">child</a></li>
-                <li><a href="#multiple">multiple</a></li>
+                <li><a href="#class">Class</a></li>
+                <li><a href="#compound">Compound</a></li>
+                <li><a href="#descendant">Descendant</a></li>
+                <li><a href="#child">Child</a></li>
+                <li><a href="#multiple">Multiple Classes</a></li>
             </ul>
         </nav> 
     </header>           
@@ -65,14 +66,13 @@
     background-color:yellow;
 }</code></pre>
 
-
             <p>Here's what it looks like:</p>
             <div id="id-div">Inside my-div</div>
         </fieldset>
 
-        <fieldset>
+        <fieldset> 
             <legend><a id="class">class</a></legend>
-            <p>classes can be applied to more than one item per page</p>
+            <p>Classes can be applied to more than one item per page</p>
             <p>Here's how we hook a class attribute to an element:</p>
             <pre><code>class="my-list"</code></pre>
             <p>Here's how the CSS is applied to the element:</p>
@@ -84,92 +84,99 @@
             <p>Here's what it looks like:</p>
             <div>
                 <ul>
-                    <li class="my-list">I'm in li with a class of my-list</li>
-                    <li class="my-list">I'm in li with a class of my-list</li>
-                    <li class="my-list">I'm in li with a class of my-list</li>
+                    <li class="my-list">I'm in a li with a class of my-list</li>
+                    <li class="my-list">I'm in a li with a class of my-list</li>
+                    <li class="my-list">I'm in a li with a class of my-list</li>
                 </ul>
             </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset> 
             <legend><a id="compound">compound</a></legend>
-            <p>compoud selectors allow multiple selector blocks separated by commas</p>
-            <p>Here's how the CSS is applied to the elements:</p>
-            <pre><code>li.new-list, div#new-div{
-    background-color: blue;
+            <p>Compound selectors allow multiple selector blocks separated by commas</p>
+            <p>Here's how the CSS is applied to the element:</p>
+            <pre><code>li.new-list,div#new-div{
+    background-color:blue;
 }</code></pre>
 
 
             <p>Here's what it looks like:</p>
             <div>
                 <ul>
-                    <li class="new-list">I'm in li with a class of new-list</li>
-                    <li class="new-list">I'm in li with a class of new-list</li>
-                    <li class="new-list">I'm in li with a class of new-list</li>    
+                    <li class="new-list">I'm in a li with a class of new-list</li>   
+                    <li class="new-list">I'm in a li with a class of new-list</li>   
+                    <li class="new-list">I'm in a li with a class of new-list</li>
                 </ul>
             </div>
             <div id="new-div">Inside new-div</div>
         </fieldset>
 
-        <fieldset>
-            <legend><a id="descendant">descendant</a></legend>
-            <p>descendant selectors lets us access elements at any depth within the current element</p>
-            <p>Here's how the CSS is applied to the elements:</p>
+        <fieldset> 
+            <legend><a id="descendant">Descendant</a></legend>
+            <p>Descendant selectors let us access elements at any depth within the current element</p>
+            <p>Here's how the CSS is applied to the element:</p>
             <pre><code>div.grandkids li{
-    background-color: red;
+    background-color:red;
 }</code></pre>
 
 
             <p>Here's what it looks like:</p>
-            <div class="grandkids">
+            <div class = "grandkids">
                 <ul>
-                    <li>I'm in li inside grandkids div</li>
-                    <li>I'm in li inside grandkids div</li>
-                    <li>I'm in li inside grandkids div</li> 
+                    <li>I'm in a li inside the grandkids div</li>
+                    <li>I'm in a li inside the grandkids div</li>
+                    <li>I'm in a li inside the grandkids div</li>
                 </ul>
             </div>
         </fieldset>
-        
-        <fieldset>
-            <legend><a id="child">child</a></legend>
+
+        <fieldset> 
+            <legend><a id="child">Child</a></legend>
             <p>A child selector lets us access the next immediate elements inside the current element</p>
-            <p>Here's how the CSS is applied to the elements:</p>
+            <p>Here's how the CSS is applied to the element:</p>
             <pre><code>ul.kids>li{
-    background-color: green;
+    background-color:green;
 }</code></pre>
 
 
             <p>Here's what it looks like:</p>
             <div>
                 <ul class="kids">
-                    <li>I'm in li inside the kids ul</li>
-                    <li>I'm in li inside the kids ul</li>
-                    <li>I'm in li inside the kids ul</li>
+                    <li>I'm in a li inside the kids ul</li>
+                    <li>I'm in a li inside the kids ul</li>
+                    <li>I'm in a li inside the kids ul</li>
                 </ul>
             </div>
         </fieldset>
 
-        <fieldset>
-            <legend><a id="multiple">class</a></legend>
-            <p>classes can be applied to more than one item per page</p>
-            <p>more than one class can be applied to an element:</p>
+        <fieldset> 
+            <legend><a id="multiple">Multiple Classes</a></legend>
+            <p>More than one class can be applied to an element</p>
+            <p>Here's how we hook multiple class attributes to an element:</p>
             <pre><code>class="add-background add-border"</code></pre>
-
+            <p>Here's how the CSS is applied to the element:</p>
+            <pre><code>.add-border{
+    border: 1px solid #000;
+}
+.add-background{
+    background-color:gold;
+            
+}</code></pre>
 
 
             <p>Here's what it looks like:</p>
             <div>
                 <ul>
-                    <li class="add-background add-border">I'm an li multiple classes/li>
-                    <li class="add-background add-border">I'm an li multiple classes/li>
-                    <li class="add-background add-border">I'm an li multiple classes/li>
+                    <li class="add-background add-border">I'm in a li with multiple classes</li>
+                    <li class="add-background add-border">I'm in a li with multiple classes</li>
+                    <li class="add-background add-border">I'm in a li with multiple classes</li>
                 </ul>
             </div>
         </fieldset>
 
         <footer class="page-footer">
             <p><small>&copy; 2023 by 
-                Abraham Kassa, All Rights Reserved ~ 
+                mohamed yuusuf, All Rights Reserved ~ 
                 <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
                 <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
            </p>
